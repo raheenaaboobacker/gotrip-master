@@ -87,7 +87,7 @@ function CoordinatorRegister() {
           }
 
           else {
-            alert("Registration Failed!")
+            alert(response.data.message)
           }
 
 
@@ -95,7 +95,7 @@ function CoordinatorRegister() {
           .catch((error) => {
             console.log(error);
 
-            alert("Registration Failed!")
+            alert(error.response.data.message)
 
           });
       }

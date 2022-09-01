@@ -66,7 +66,7 @@ function ManageCoordinator() {
      });
    }
    const item=users.filter((filterdata) => {
-    return filterdata.registerdetails[0].r_id.includes(localStorage.getItem("resort_Id"))
+    return filterdata.registerdetails[0]?.r_id.includes(localStorage.getItem("resort_Id"))
   })
   return !token ? (
     navigate("/login")):(
